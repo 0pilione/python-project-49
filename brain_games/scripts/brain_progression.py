@@ -16,13 +16,13 @@ def question(quest_task):
 
 def engine():
     first = randint(1, 10)
-    step = randint(1, 10)
+    step = randint(5, 10)
     length = randint(5, 15)
     l = randint(1, length - 2)
     stop = first + step * length
     lst_num = list(range(first, stop, step))
     res = lst_num[l]
-    lst_num[l] = '..'
+    lst_num[l] = ..
     eng_task = str(lst_num)
     return eng_task, res
 
