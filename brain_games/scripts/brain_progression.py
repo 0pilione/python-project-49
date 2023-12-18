@@ -22,7 +22,7 @@ def engine():
     stop = first + step * length
     lst_num = list(range(first, stop, step))
     res = lst_num[l]
-    lst_num[l] = ..
+    lst_num[l] = " .. "
     eng_task = str(lst_num)
     return eng_task, res
 
