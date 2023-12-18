@@ -22,7 +22,7 @@ def engine():
 
 name = input('''Welcome to the Brain Games!
 May I have your name? ''' )
-print(f"Hello, {name}!\nAnswer 'yes' if the number is even, otherwise answer 'no'.")
+print(f'Hello, {name}!\nAnswer "yes" if the number is even, otherwise answer "no".')
 win = 3
 index = 0
 result = 0
