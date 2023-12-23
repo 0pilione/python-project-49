@@ -23,7 +23,11 @@ def engine():
     lst_num = list(range(first, stop, step))
     res = lst_num[l]
     lst_num[l] = '..'
-    eng_task = str(lst_num)
+    eng_task_a = str(lst_num)
+    eng_task = eng_task_a.replace(',', '')
+    eng_task = eng_task.replace(']', '')
+    eng_task = eng_task.replace('[', '')
+    eng_task = eng_task.replace("'", "")
     return eng_task, res
 
 
