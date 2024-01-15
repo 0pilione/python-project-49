@@ -1,14 +1,17 @@
 from random import randint
 import math
 
+
 def main():
     ab = 'x'
 
+
 def salut():
     salut_name = input('''Welcome to the Brain Games!
-May I have your name? ''' )
+May I have your name? ''')
     print(f'Hello, {salut_name}!')
     return salut_name
+
 
 def question(quest_task):
     print(f'Question: {quest_task}')
@@ -17,7 +20,7 @@ def question(quest_task):
 
 def engine():
     a = randint(1, 10)
-    b = randint(1,10)
+    b = randint(1, 10)
     res = math.gcd(a, b)
     eng_task = str(a) + ' ' + str(b)
     return eng_task, res
@@ -28,8 +31,10 @@ def check(check_task, check_answ, name):
         print('Correct!')
         return 1
     else:
-        print(f"{check_task} is wrong answer ;(. Correct answer was {check_answ}.")
+        print(f"""{check_task} is wrong answer ;(.
+Correct answer was {check_answ}.""")
         return 0
+
 
 name = salut()
 
