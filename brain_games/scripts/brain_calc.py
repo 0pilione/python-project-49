@@ -1,23 +1,27 @@
 from random import randint
 
+
 def main():
     ab = 'x'
 
+
 def salut():
     salut_name = input('''Welcome to the Brain Games!
-May I have your name? ''' )
+May I have your name? ''')
     print(f'Hello, {salut_name}!')
     return salut_name
+
 
 def question(quest_task):
     print(f'Question: {quest_task}')
     quest_d = input('Your answer: ')
     return quest_d
 
+
 def engine():
     a = randint(1, 10)
-    b = randint(1,10)
-    op = randint(1,3)
+    b = randint(1, 10)
+    op = randint(1, 3)
     res = 0
     op_str = ''
     if op == 1:
@@ -29,7 +33,7 @@ def engine():
     elif op == 3:
         op_str = ' * '
         res = a * b
-    
+
     eng_task = str(a) + op_str + str(b)
     return eng_task, res
 
@@ -39,8 +43,10 @@ def check(check_task, check_answ, name):
         print('Correct!')
         return 1
     else:
-        print(f"{check_task} is wrong answer ;(. Correct answer was {check_answ}.")
+        print(f"""{check_task} is wrong answer ;(.
+Correct answer was {check_answ}.""")
         return 0
+
 
 name = salut()
 
@@ -62,10 +68,3 @@ if ch == 1:
     print(f'Congratulations, {name}!')
 else:
     print(f"Let's try again, {name}!")
-
-
-
-
-
-
-
