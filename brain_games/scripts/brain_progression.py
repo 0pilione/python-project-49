@@ -1,28 +1,32 @@
 from random import randint
 
+
 def main():
     ab = 'x'
 
+
 def salut():
     salut_name = input('''Welcome to the Brain Games!
-May I have your name? ''' )
+May I have your name? ''')
     print(f'Hello, {salut_name}!')
     return salut_name
+
 
 def question(quest_task):
     print(f'Question: {quest_task}')
     quest_d = input('Your answer: ')
     return quest_d
 
+
 def engine():
     first = randint(5, 10)
     step = randint(5, 10)
     length = randint(5, 15)
-    l = randint(1, length - 2)
+    ll = randint(1, length - 2)
     stop = first + step * length
     lst_num = list(range(first, stop, step))
-    res = lst_num[l]
-    lst_num[l] = '..'
+    res = lst_num[ll]
+    lst_num[ll] = '..'
     eng_task_a = str(lst_num)
     eng_task = eng_task_a.replace(',', '')
     eng_task = eng_task.replace(']', '')
@@ -36,8 +40,10 @@ def check(check_task, check_answ, name):
         print('Correct!')
         return 1
     else:
-        print(f"{check_task} is wrong answer ;(. Correct answer was {check_answ}.")
+        print(f"""{check_task} is wrong answer ;(.
+Correct answer was {check_answ}.""")
         return 0
+
 
 name = salut()
 
