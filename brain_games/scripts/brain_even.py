@@ -10,7 +10,9 @@ def engine():
     random_number = randint(1, 100)
     print(f"Question: {random_number}")
     user_answer = input('Your answer: ')
-    if (user_answer == 'yes' and random_number % 2 == 0) or (user_answer == 'no' and random_number % 2 != 0):
+    a = user_answer == 'yes' and random_number % 2 == 0
+    b = user_answer == 'no' and random_number % 2 != 0
+    if a or b:
         print('Correct!')
         return 1
     elif user_answer == 'yes' and random_number % 2 != 0:

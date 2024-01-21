@@ -4,7 +4,7 @@ import math
 
 def main():
     pass
-   #  ab = 'x'
+    #  ab = 'x'
 
 
 def salut():
@@ -18,6 +18,7 @@ def question(quest_task):
     print(f'Question: {quest_task}')
     quest_d = input('Your answer: ')
     return quest_d
+
 
 def engine():
     a = randint(1, 10)
