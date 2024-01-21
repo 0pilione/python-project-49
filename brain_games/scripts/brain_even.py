@@ -3,7 +3,6 @@ from random import randint
 
 
 def main():
-    #NULL
     ab = 'x'
 
 
