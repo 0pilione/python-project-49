@@ -3,8 +3,8 @@ from random import randint
 
 
 def main():
-    NULL
-    #ab = 'x'
+    #NULL
+    ab = 'x'
 
 
 def engine():
