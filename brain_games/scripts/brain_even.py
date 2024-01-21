@@ -1,8 +1,10 @@
+from asyncio.windows_events import NULL
 from random import randint
 
 
 def main():
-    ab = 'x'
+    NULL
+    #ab = 'x'
 
 
 def engine():
