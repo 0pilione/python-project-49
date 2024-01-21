@@ -1,8 +1,8 @@
-from asyncio.windows_events import NULL
 from random import randint
 
 
 def main():
+    pass
     ab = 'x'
 
 
