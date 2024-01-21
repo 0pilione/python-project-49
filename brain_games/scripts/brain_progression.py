@@ -2,7 +2,8 @@ from random import randint
 
 
 def main():
-    ab = 'x'
+    pass
+    # ab = 'x'
 
 
 def salut():
