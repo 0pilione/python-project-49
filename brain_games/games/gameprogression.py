@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
 from random import randint
-import math
+
 
 def instructions_progression():
     print('What number is missing in the progression?')
+
 
 def question_progression():
     first = randint(5, 10)

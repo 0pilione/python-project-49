@@ -3,8 +3,10 @@
 from random import randint
 import math
 
+
 def instructions_gsd():
     print('Find the greatest common divisor of given numbers.')
+
 
 def question_gsd():
     a = randint(1, 10)

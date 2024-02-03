@@ -2,6 +2,7 @@
 
 from random import randint
 
+
 def instructions_even():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 

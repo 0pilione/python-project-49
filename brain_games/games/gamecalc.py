@@ -2,8 +2,10 @@
 
 from random import randint
 
+
 def instructions_calc():
     print('What is the result of the expression?')
+
 
 def question_calc():
     a = randint(1, 10)
