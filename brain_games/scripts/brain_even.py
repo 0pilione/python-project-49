@@ -1,46 +1,7 @@
-from random import randint
-
+from brain_games.games.gameeven import question_even, instructions_even
+from brain_games.engine import engine
 
 def main():
     pass
-    # ab = 'x'
 
-
-def engine():
-    random_number = randint(1, 100)
-    print(f"Question: {random_number}")
-    user_answer = input('Your answer: ')
-    a = user_answer == 'yes' and random_number % 2 == 0
-    b = user_answer == 'no' and random_number % 2 != 0
-    if a or b:
-        print('Correct!')
-        return 1
-    elif user_answer == 'yes' and random_number % 2 != 0:
-        print(f"""yes' is wrong answer ;(.
-Correct answer was 'no'.\n Let's try again, {name}!""")
-        return 0
-    elif user_answer == 'no' and random_number % 2 == 0:
-        print(f"""'no' is wrong answer ;(.
-Correct answer was 'yes'.\n Let's try again, {name}!""")
-        return 0
-    else:
-        print(f"it is wrong answer ;(.\n Let's try again, {name}!")
-        return 0
-
-
-name = input('''Welcome to the Brain Games!
-May I have your name? ''')
-print(f'''Hello, {name}!
-Answer "yes" if the number is even, otherwise answer "no".''')
-win = 3
-index = 0
-result = 0
-
-while index < win:
-    result = engine()
-    if result == 0:
-        break
-    index += 1
-
-if result == 1:
-    print(f'Congratulations, {name}!')
+engine(question_even, instructions_even)

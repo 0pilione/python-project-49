@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.scripts.cli import welcome_user
+from brain_games.clii import welcome_user
 
 
 def greet():
