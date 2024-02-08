@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+from random import randint
+import math
+
 
 def instructions_gsd():
     print('Find the greatest common divisor of given numbers.')
