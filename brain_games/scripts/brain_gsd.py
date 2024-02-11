@@ -1,9 +1,10 @@
-from brain_games.games.gsd import question_gsd, instructions_gsd
+from brain_games.games.gsd import question, instructions
 from brain_games.engine import engine
 
 
 def main():
-    pass
+    engine(question, instructions)
 
 
-engine(question_gsd, instructions_gsd)
+ if __name__ == '__main__':
+    main()

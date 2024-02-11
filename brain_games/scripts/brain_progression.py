@@ -1,10 +1,11 @@
-from brain_games.games.progression import question_progression
-from brain_games.games.progression import instructions_progression
+from brain_games.games.progression import question
+from brain_games.games.progression import instructions
 from brain_games.engine import engine
 
 
 def main():
-    pass
+    engine(question, instructions)
 
 
-engine(question_progression, instructions_progression)
+if __name__ == '__main__':
+    main()

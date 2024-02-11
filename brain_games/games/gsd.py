@@ -4,11 +4,11 @@ from random import randint
 import math
 
 
-def instructions_gsd():
+def instructions():
     print('Find the greatest common divisor of given numbers.')
 
 
-def question_gsd():
+def question():
     a = randint(1, 10)
     b = randint(1, 10)
     res = str(math.gcd(a, b))

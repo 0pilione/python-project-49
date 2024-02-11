@@ -3,11 +3,11 @@
 from random import randint
 
 
-def instructions_prime():
+def instructions():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
-def question_prime():
+def question():
     num = randint(2, 100)
     k = 0
     for i in range(2, num // 2 + 1):

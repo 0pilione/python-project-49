@@ -3,11 +3,11 @@
 from random import randint
 
 
-def instructions_progression():
+def instructions():
     print('What number is missing in the progression?')
 
 
-def question_progression():
+def question():
     first = randint(5, 10)
     step = randint(5, 10)
     length = randint(5, 15)
