@@ -18,7 +18,7 @@ def engine(question, instructions):
             count += 1
             continue
         else:
-            print(f'{user_answer} is wrong answer ;(.\n Correct answer was {res}.') noqa: E501
+            print(f'{user_answer} is wrong answer ;(.\n Correct answer was {res}.') 'noqa: E501'
             check_res = 0
             break
     if check_res == 1:
