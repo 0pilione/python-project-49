@@ -1,9 +1,10 @@
-from brain_games.games.gamecalc import question_calc, instructions_calc
+from brain_games.games.gamecalc import question, instructions
 from brain_games.engine import engine
 
 
 def main():
-    pass
+    engine(question, instructions)
 
 
-engine(question_calc, instructions_calc)
+if __name__ == '__main__':
+    main()
