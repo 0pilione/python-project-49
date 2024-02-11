@@ -11,14 +11,14 @@ def engine(question, instructions):
     while count < 3:
         task, res = question()
         print(f"Question: {task}")
-        user_answer = input('Your answer: ')
-        if user_answer == res:
+        user_answ = input('Your answer: ')
+        if user_answ == res:
             print('Correct!')
             check_res = 1
             count += 1
             continue
         else:
-            print(f'{user_answer} is wrong answer ;(.\n Correct answer was {res}.') 'noqa: E501'
+            print(f'{user_answ} is wrong answer ;(.\n Correct answer was {res}.')
             check_res = 0
             break
     if check_res == 1:
