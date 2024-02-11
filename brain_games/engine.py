@@ -2,9 +2,8 @@
 
 
 def engine(question, instructions):
-    name = input('''Welcome to the Brain Games!
-    May I have your name? ''')
-    print(f'''Hello, {name}!''')
+    name = input('Welcome to the Brain Games!\n May I have your name?')
+    print(f'Hello, {name}!')
     instructions()
 
     count = 0
