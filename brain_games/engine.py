@@ -1,17 +1,17 @@
-#!/usr/bin/env python3
+import prompt
 
 
-def engine(question, instructions):
-    name = input('Welcome to the Brain Games!\n May I have your name?')
+def engine(module):
+    name = prompt.string('Welcome to the Brain Games!\n May I have your name?')
     print(f'Hello, {name}!')
-    instructions()
+    module.instructions()
 
     count = 0
     check_res = 0
     while count < 3:
-        task, res = question()
+        task, res = module.question()
         print(f"Question: {task}")
-        usr_answ = input('Your answer: ')
+        usr_answ = prompt.string('Your answer: ')
         if usr_answ == res:
             print('Correct!')
             check_res = 1

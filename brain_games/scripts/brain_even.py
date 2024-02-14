@@ -1,9 +1,12 @@
-from brain_games.games.even import question, instructions
+#!/usr/bin/env python3
+
+
 from brain_games.engine import engine
+import brain_games.games.even as even
 
 
 def main():
-    engine(question, instructions)
+    engine(even)
 
 
 if __name__ == '__main__':

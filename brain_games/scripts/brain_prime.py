@@ -1,9 +1,13 @@
-from brain_games.games.prime import question, instructions
+#!/usr/bin/env python3
+
+
 from brain_games.engine import engine
+import brain_games.games.prime as prime
 
 
 def main():
-    pass
+    engine(prime)
 
 
-engine(question, instructions)
+if __name__ == '__main__':
+    main()
