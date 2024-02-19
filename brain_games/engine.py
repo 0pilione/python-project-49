@@ -11,14 +11,14 @@ def engine(module):
     while count < 3:
         task, res = module.question()
         print(f"Question: {task}")
-        usr_answer = prompt.string('Your answer: ')
-        if usr_answer == res:
+        user_answer = prompt.string('Your answer: ')
+        if user_answer == res:
             print('Correct!')
             check_result = 1
             count += 1
             continue
         else:
-            print(f'{usr_answer} is wrong answer ;(.\n Correct answer was {res}.')
+            print(f'{user_answer} is wrong answer ;(.\n Correct answer was {res}.') #noqa: E501
             check_result = 0
             break
     if check_result == 1:
