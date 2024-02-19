@@ -1,14 +1,23 @@
 from random import randint
+from brain_games.games import constants
 
 
 def instructions():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print(constants.EVEN_INSTRUCTION)
+
+
+def is_even(x):
+    if x % 2 == 0:
+        return True
+    else:
+        return False
 
 
 def question():
     random_number = randint(1, 100)
-    if random_number % 2 == 0:
-        res = 'yes'
+    result = ''
+    if is_even(random_number):
+        result = 'yes'
     else:
-        res = 'no'
-    return random_number, res
+        result = 'no'
+    return random_number, result

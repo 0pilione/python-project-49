@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 from brain_games.engine import engine
 import brain_games.games.gsd as gsd
 

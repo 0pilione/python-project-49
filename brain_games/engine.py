@@ -7,21 +7,21 @@ def engine(module):
     module.instructions()
 
     count = 0
-    check_res = 0
+    check_result = 0
     while count < 3:
         task, res = module.question()
         print(f"Question: {task}")
-        usr_answ = prompt.string('Your answer: ')
-        if usr_answ == res:
+        usr_answer = prompt.string('Your answer: ')
+        if usr_answer == res:
             print('Correct!')
-            check_res = 1
+            check_result = 1
             count += 1
             continue
         else:
-            print(f'{usr_answ} is wrong answer ;(.\n Correct answer was {res}.')
-            check_res = 0
+            print(f'{usr_answer} is wrong answer ;(.\n Correct answer was {res}.')
+            check_result = 0
             break
-    if check_res == 1:
+    if check_result == 1:
         print(f'Congratulations, {name}!')
     else:
         print(f"Let's try again, {name}!")

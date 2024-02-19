@@ -1,22 +1,26 @@
 from random import randint
+from brain_games.games import constants
 
 
 def instructions():
-    print('What number is missing in the progression?')
+    print(constants.PROGRESSION_INSTRUCTION)
 
 
 def question():
     first = randint(5, 10)
     step = randint(5, 10)
     length = randint(5, 15)
-    ll = randint(1, length - 2)
-    stop = first + step * length
-    lst_num = list(range(first, stop, step))
-    res = str(lst_num[ll])
-    lst_num[ll] = '..'
-    eng_task_a = str(lst_num)
-    eng_task = eng_task_a.replace(',', '')
-    eng_task = eng_task.replace(']', '')
-    eng_task = eng_task.replace('[', '')
-    eng_task = eng_task.replace("'", "")
-    return eng_task, res
+    missed = randint(1, length - 2)
+    eng_task = ''
+    current = first
+    result = 0
+    for i in range(length):
+        if i != missed:
+            eng_task += str(current)
+            eng_task += ' '
+            current += step
+        else:
+            eng_task += '.. '
+            result = current
+            current += step
+    return eng_task, str(result)
