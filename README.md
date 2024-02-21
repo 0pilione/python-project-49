@@ -3,8 +3,19 @@
 
 <a href="https://codeclimate.com/github/0pilione/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/129c5a7c7d7257747d0d/maintainability" /></a>
 
-brain-even: https://asciinema.org/connect/f44c5abe-f1db-4cfd-99f5-eb29c912ddde
-brain-calc: https://asciinema.org/a/qk83dY7K0oxgrRUciKhPRcwmQ
-brain-gcd: https://asciinema.org/a/cUbWJP8r5neEeAm8LjRppehBm
-brain-progression: https://asciinema.org/a/IJCiIa2gc18lS1at8WXTP9VfX
-brain-prime: https://asciinema.org/a/VXLcXKyd2hv5DQJfPJU7b5LBS
+brain-even: <a href="https://asciinema.org/a/JAdNdB4h7L6IpCvCTYkS7Zl9j" target="_blank"><img src="https://asciinema.org/a/JAdNdB4h7L6IpCvCTYkS7Zl9j.svg" /></a>
+brain-calc: <a href="https://asciinema.org/a/qk83dY7K0oxgrRUciKhPRcwmQ" target="_blank"><img src="https://asciinema.org/a/qk83dY7K0oxgrRUciKhPRcwmQ.svg" /></a>
+brain-gcd: <a href="https://asciinema.org/a/cUbWJP8r5neEeAm8LjRppehBm" target="_blank"><img src="https://asciinema.org/a/cUbWJP8r5neEeAm8LjRppehBm.svg" /></a>
+brain-progression: <a href="https://asciinema.org/a/IJCiIa2gc18lS1at8WXTP9VfX" target="_blank"><img src="https://asciinema.org/a/IJCiIa2gc18lS1at8WXTP9VfX.svg" /></a>
+brain-prime: <a href="https://asciinema.org/a/VXLcXKyd2hv5DQJfPJU7b5LBS" target="_blank"><img src="https://asciinema.org/a/VXLcXKyd2hv5DQJfPJU7b5LBS.svg" /></a>
+
+
+List of libraries:
+math
+prompts
+random
+
+Описание: пять мини-игр по три раунда каждая. В brain-even определяяем четность/нечетность числа, в brain-calc
+вычисляем простые арифметические примеры, в brain-gsd находим аибольший общий делитель (НОД), в brain-progression
+находим недостающее число в арифметической прогрессии, а в brain-prime определяем, простое число или нет.
+
