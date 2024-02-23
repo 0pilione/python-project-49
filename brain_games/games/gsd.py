@@ -11,4 +11,3 @@ def question():
     res = str(math.gcd(random_number, random_number_2))
     eng_task = f'{random_number} {random_number_2}'
     return eng_task, res
-
