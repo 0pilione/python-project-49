@@ -4,7 +4,7 @@ import prompt
 def engine(module):
     name = prompt.string('Welcome to the Brain Games!\n May I have your name?')
     print(f'Hello, {name}!')
-    module.instructions()
+    print(module.INSTRUCTION)
 
     count = 0
     check_result = 0

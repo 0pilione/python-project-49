@@ -1,9 +1,7 @@
 from random import randint
-from brain_games.games import constants
 
 
-def instructions():
-    print(constants.EVEN_INSTRUCTION)
+INSTRUCTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(x):

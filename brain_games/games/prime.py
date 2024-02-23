@@ -1,19 +1,17 @@
 from random import randint
-from brain_games.games import constants
 
 
-def instructions():
-    print(constants.PRIME_INSTRUCTION)
+INSTRUCTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'  # noqa: E501
 
 
 def is_prime(x):
     count = 0
+    if (x <= 1):
+        return False
     for i in range(2, x // 2 + 1):
         if (x % i == 0):
             count = count + 1
-    if (x == 1):
-        return False
-    elif (count == 0):
+    if (count == 0):
         return True
     else:
         return False

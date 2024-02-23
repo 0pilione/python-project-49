@@ -1,9 +1,7 @@
 from random import randint
-from brain_games.games import constants
 
 
-def instructions():
-    print(constants.PROGRESSION_INSTRUCTION)
+INSTRUCTION = 'What number is missing in the progression?'
 
 
 def question():
